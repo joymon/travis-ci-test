@@ -1,3 +1,4 @@
-"scripts": {
-  "test": "tests/test.js"
+{"scripts": {
+    "test": "tests/test.js"
+  }
 }
