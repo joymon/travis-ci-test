@@ -1,4 +1,4 @@
 {"scripts": {
-    "test": "tests/test.js"
+    "test": "./tests/test.js"
   }
 }
