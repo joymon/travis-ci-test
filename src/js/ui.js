@@ -1,7 +1,13 @@
 $(document).ready(function () {
-    var world = new World(document.getElementById("world"));
-    world.draw();
-    karel = new Karel(document.getElementById("world"), world);
+    var worldCanvas = document.getElementById("world");
+    if (worldCanvas === null) {
+        console.log("Not able to get the world canvas");
+    }
+    else {
+        var world = new World(worldCanvas);
+        world.draw();
+        karel = new Karel(worldCanvas, world);
+    }
 
 });
 $("#back-button").click(function () {
