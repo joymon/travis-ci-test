@@ -1,8 +1,3 @@
 language: node_js
 node_js:
   - "stable"
-before_script:
-  - npm install jasmine-core --save-dev
-  - npm install karma -g
-  - npm install karma-jasmine --save-dev
-  - npm install karma-chrome-launcher --save-dev
