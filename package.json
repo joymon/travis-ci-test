@@ -4,6 +4,7 @@
   },
   "devDependencies": {
     "jasmine-core": "^2.3.4",
+    "karma": "~0.8",
     "karma-chrome-launcher": "^0.2.1"
   }
 }
