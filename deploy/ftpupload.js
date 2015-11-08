@@ -6,9 +6,6 @@ if (process === null) {
     console.log("process is null");
 }
 else {
-    console.log("process.env =" + process.env.ftp_user);
-    var files = getFiles('src');
-
     uploadToFTP(files);
 }
 function getFiles(dir, files_) {
@@ -27,8 +24,15 @@ function getFiles(dir, files_) {
 
 function uploadToFTP(files) {
     var ftp = new FtpClient();
+    var ftpConfig = getConfiguration();
 
-    ftp.deploy(getConfiguration(), function (err, fileName) {
+    console.log("ftp.host =" + ftpConfig.host);
+    console.log("ftp.username =" + ftpConfig.username);
+    console.log("ftp.localRoot =" + ftpConfig.localRoot);
+    console.log("ftp.remoteRoot =" + ftpConfig.remoteRoot);
+    console.log("ftp.port =" + ftpConfig.port);
+
+    ftp.deploy(ftpConfig, function (err, fileName) {
         if (err) {
             console.log("error " + err);
         }
