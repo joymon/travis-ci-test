@@ -28,6 +28,7 @@ function uploadToFTP(files) {
 
     console.log("ftp.host =" + ftpConfig.host);
     console.log("ftp.username =" + ftpConfig.username);
+    console.log("ftp.password length =" + ftpConfig.username.length);
     console.log("ftp.localRoot =" + ftpConfig.localRoot);
     console.log("ftp.remoteRoot =" + ftpConfig.remoteRoot);
     console.log("ftp.port =" + ftpConfig.port);
@@ -42,6 +43,15 @@ function uploadToFTP(files) {
     });
 }
 function getConfiguration() {
+
+    return {
+        host: "joymononline.in",
+        port: 21,
+        username: "travis-ci-test",
+        password: "tr@vi$-c1-te$t",
+        localRoot: "src",
+        remoteRoot: "/"
+    };
     return {
         host: process.env.ftp_host,
         port: 21,
