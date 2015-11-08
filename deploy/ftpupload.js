@@ -28,6 +28,7 @@ function uploadToFTP(files) {
 
     console.log("ftp.host =" + ftpConfig.host);
     console.log("ftp.username =" + ftpConfig.username);
+    console.log("ftp.password length =" + ftpConfig.password.length);
     console.log("ftp.localRoot =" + ftpConfig.localRoot);
     console.log("ftp.remoteRoot =" + ftpConfig.remoteRoot);
     console.log("ftp.port =" + ftpConfig.port);
