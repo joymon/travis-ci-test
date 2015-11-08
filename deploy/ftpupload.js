@@ -6,7 +6,7 @@ if (process === null) {
     console.log("process is null");
 }
 else {
-    uploadToFTP(files);
+    uploadToFTP();
 }
 function getFiles(dir, files_) {
     files_ = files_ || [];
@@ -37,12 +37,11 @@ function uploadToFTP(files) {
             console.log("error " + err);
         }
         else {
-            console.log("Completed -" + fileName);
+            console.log("Completed uploading");
         }
     });
 }
 function getConfiguration() {
-
     return {
         host: process.env.ftp_host,
         port: 21,
