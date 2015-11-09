@@ -7,3 +7,5 @@ This is to show that how a pure browser based HTML+JS application can leverage t
 - It runs JavaScript tests written using Jasmine
 - If those tests are success, it deploy to web site via FTP
 - The deployment location is [http://joymononline.in/tests/travis-ci-test/karel.htm](http://joymononline.in/tests/travis-ci-test/karel.htm)
+
+All these CI & CD activities are free. Obvioulsy there is cost in hosting space of www.joymononline.in. If its Google App Engine or free Azure account, hosting too comes in free
