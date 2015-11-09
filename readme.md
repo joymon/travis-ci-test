@@ -1,3 +1,9 @@
 [![Build Status](https://travis-ci.org/joymon/travis-ci-test.svg)](https://travis-ci.org/joymon/travis-ci-test)
 
 #Test project for Travis-CI CI & CD
+
+This is to show that how a pure browser based HTML+JS application can leverage the CI&CD using Travis-CI. After every check-in
+- Travis container kicks up
+- It runs JavaScript tests written using Jasmine
+- If those tests are success, it deploy to web site via FTP
+- The deployment location is [http://joymononline.in/tests/travis-ci-test/karel.htm](http://joymononline.in/tests/travis-ci-test/karel.htm)
